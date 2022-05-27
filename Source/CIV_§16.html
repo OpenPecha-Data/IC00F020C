@@ -1,0 +1,1417 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Bibliotheca Polyglotta</title>
+<link rel='stylesheet' type='text/css' href='css/bp.css'>
+<link rel='stylesheet' type='text/css' href='css/diac_doc.css'>
+
+<link rel='stylesheet' type='text/css' href='css/imageGallery.css'>
+<link rel='stylesheet' type='text/css' href='css/ss.css'>
+	      <link rel='stylesheet' type='text/css' href='css/tree_menu.css'>
+<script type="text/javascript" src="js/jquery-1.3.2.js"></script>
+<!--  <script type="text/javascript" src="js/jqModal.js"></script>-->
+<script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript" src="js/tree_menu.js"></script>
+<!-- <script src="js/analytics_tracking.js" type="text/javascript"></script> -->
+
+
+<!-- <script type="text/javascript" src="js/popupDivhandling.js"></script> -->
+<!--  <script type="text/javascript" src="jquery-latest.js"></script>
+<script type="text/javascript" src="js/jquery-imagegallery.js"></script>-->
+</head>
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//vrtx.uio.no/js/analytics/v2/analytics.js','ga');
+
+ga('create', 'UA-86407471-1', 'auto');
+ga(function(tracker) {
+
+	// Modifies sendHitTask to hit ipproxy instead of http://www.google-analytics.com directly
+	tracker.set('sendHitTask', function(model) {
+		payload = model.get('hitPayload');
+		var xhr = new XMLHttpRequest();
+		xhr.open('GET', '//w3prod-ipproxy.uio.no/collect' +'?' + payload, true);
+		xhr.send();
+	});
+		ga('send', 'pageview');
+});
+</script>
+<body><div class='banner'></div><!-- banner --><div class='uiologo'>
+<a href='http://www.hf.uio.no/'><img src='https://www2.hf.uio.no/polyglotta/hfe.png' border='0'></a></div><!-- uiologo --><div class='clear'></div>
+<div class='smule_tittel'>
+<div class='brodsmuleboks'>You are here: <a href='/polyglotta/index.php' accesskey='1'> BP HOME</a> >  <a href='/polyglotta/index.php?page=library&amp;bid=2' accesskey='1'>TLB</a> > <a href='/polyglotta/index.php
+	?page=volume&amp;vid=37' accesskey='1'>Vimalakīrtinirdeśa</a> > fulltext</div><div class='clear'></div>
+<div class='headline'>Vimalakīrtinirdeśa<div class='clear'></div></div><!-- headline -->
+</div><!-- smule_tittel -->
+<!--<div>-->
+
+<h2 class="trigger" id="tr_lang"><a  href="#">Choose languages</a></h2>
+<h2 class="trigger" id="tr_img"><a  href="#">Choose images, etc.</a></h2>
+
+
+<div id="toggle_container_lan">
+
+<form  id="tr"  name="Sprakvalg2" action="inc/set_cookie_lan.php" method="POST">
+
+<div style="float:left; width:auto; text-align:left; margin-left:20px;">
+<h5>Choose languages</h5>
+<ul>
+<input value="Choose all" type="button" onClick="markAll('tr')"><input value="Uncheck all" type="button" onClick="markNone('tr')">
+
+	<li class="tip" title="Checkbox :: Enable text"><label class="f1_checkbox"><input type="checkbox" name="spraak_valg_ct_37[5280]" value="5280" id="lancheckbox" checked >Sanskrit: San: SGBSL (2004)</label></li><li class="tip" title="Checkbox :: Enable text"><label class="f1_checkbox"><input type="checkbox" name="spraak_valg_ct_37[883]" value="883" id="lancheckbox" checked >Chinese: Chi: Zhīqiān, T.474</label></li><li class="tip" title="Checkbox :: Enable text"><label class="f1_checkbox"><input type="checkbox" name="spraak_valg_ct_37[884]" value="884" id="lancheckbox" checked >Chinese: Chi: Kumārajīva, T.475</label></li><li class="tip" title="Checkbox :: Enable text"><label class="f1_checkbox"><input type="checkbox" name="spraak_valg_ct_37[885]" value="885" id="lancheckbox" checked >Chinese: Chi: Xuánzàng, T.476</label></li><li class="tip" title="Checkbox :: Enable text"><label class="f1_checkbox"><input type="checkbox" name="spraak_valg_ct_37[1869]" value="1869" id="lancheckbox" checked >Tibetan: Tib: Kg, ma</label></li><li class="tip" title="Checkbox :: Enable text"><label class="f1_checkbox"><input type="checkbox" name="spraak_valg_ct_37[882]" value="882" id="lancheckbox" checked >English: Eng: Boin (Lamotte) (1976), Eng</label></li><li class="tip" title="Checkbox :: Enable text"><label class="f1_checkbox"><input type="checkbox" name="spraak_valg_ct_37[5282]" value="5282" id="lancheckbox" checked >English: Eng: Thurman (1976)</label></li><div style="clear:both"></div>
+<input type='submit' name='set_cookie' value='Save view'>
+<div style="clear:both"></div>
+
+</ul>
+<input type="hidden" name="vid" value="37">
+<input type="hidden" name="page" value="fulltext">
+</form>
+</div>
+</div>
+
+<div id="toggle_container_img">
+<form  id="tr"  name="Sprakvalg2" action="inc/set_cookie_img.php" method="POST">
+
+<div style="float:left; width:auto; text-align: left;">
+<h5>Choose display</h5>
+<ul>
+		
+	<li> 
+		<input type='checkbox' name='bilder' checked="checked" > Enable images
+	</li>
+	<li> 
+	<input type='checkbox' onclick="onOffCheckbox();" name='fotnoter' checked="checked"> Enable footnotes
+	<div id="pff" style="display:block" >
+	<ul>
+	<li><input type='radio' name='fotnote_valg'  value='show_a' checked> Show all footnotes</li>
+	<li><input type='radio' name='fotnote_valg'  value='show_h'  > Minimize footnotes</li>
+	</ul>
+	</li>
+	
+	</div>
+	<div style="float:left; width:20em; text-align: left; margin-left:120px ">
+	<div style="clear:both"></div>
+	<input type='submit' name='set_cookie' value='Save view'>
+	<div style="clear:both"></div>
+	</div>
+	
+</ul>
+<input type="hidden" name="vid" value="37">
+<input type="hidden" name="page" value="fulltext">
+</form>
+</div>
+	
+
+
+
+</div>
+</div>
+
+<div class='sok'><form name='Sok' id='FormBlock' action='/polyglotta/index.php' method='get'>
+<input type='hidden' name='page' value='search'>
+<input type='hidden' name='bid' value='2'>
+<input type='hidden' name='vid' value='37'>
+<div class='sokeboks'>
+<input name='sokefelt' id='sokeboks' type='text' size='30' value=''>
+<input type='submit' name='Sok' value='Search' id='nsubmit'>
+<div class='clear'></div><a class="diacbutton" id="diacbutton" href="#">Diacritica</a><a id="diac2button" class="diac2button"  href="#">Diacritica-help</a><a class="s2button" href="https://wiki.uio.no/hf/dmlf/index.php/Kategori:Polyglotta:Documentation:SearchHelp">Search-help</a><div class='diacritical' id='diacritical_sign'><div style="text-align: left; ">
+<table class = 'diacritica' width="200" border="1" cellpadding="1" cellspacing="1" id="diacritical">
+    <tbody>
+        <tr>
+            <td style="text-align: center; ">ā</td>
+            <td style="text-align: center; ">ī</td>
+            <td style="text-align: center; ">ū</td>
+            <td style="text-align: center; ">ṛ</td>
+            <td style="text-align: center; ">ṝ</td>
+            <td style="text-align: center; ">ḷ</td>
+        </tr>
+        <tr>
+            <td style="text-align: center; ">ḹ</td>
+            <td style="text-align: center; ">&rsquo;</td>
+            <td style="text-align: center; ">ṃ</td>
+            <td style="text-align: center; ">ḥ</td>
+            <td style="text-align: center; ">ṅ</td>
+            <td style="text-align: center; ">&ntilde;</td>
+        </tr>
+        <tr>
+            <td style="text-align: center; ">ṭ</td>
+            <td style="text-align: center; ">ḍ</td>
+            <td style="text-align: center; ">ṇ</td>
+            <td style="text-align: center; ">ṣ</td>
+            <td style="text-align: center; ">ś</td>
+            <td style="text-align: center; ">ź</td>
+        </tr>
+        <tr>
+            <td style="text-align: center; ">&scaron;</td>
+            <td style="text-align: center; ">č</td>
+            <td style="text-align: center; ">ǰ</td>
+            <td style="text-align: center; ">&gamma;</td>
+            <td style="text-align: center; ">&nbsp;</td>
+            <td style="text-align: center; ">&nbsp;</td>
+        </tr>
+    </tbody>
+</table>
+</div></div><!-- diacritical --><div id="ex3a" class="jqmDialog"><div>
+	<span style="font-size:12px;">Note on the transliteration:</span></div>
+<div>
+	<span style="font-size:12px;">The transliteration system of the BP/TLB is based on the Unicode/UTF-8 system. However, there may be difficulties with some of the letters &ndash; particularly on PC/Windows-based systems, but not so much on the Mac. We have chosen the most accepted older and traditional systems of transliteration against, e.g, Wylie for Tibetan, since with Unicode it is possible, in Sanskrit and Tibetan, etc., to represent one sound with one letter in almost all the cases (excepting Sanskrit and Tibetan aspirated letters, and Tibetan tsa, tsha, dza). We thus do not use the Wylie system which widely employs two letters for one sound (ng, ny, sh, zh etc.).</span></div>
+<div>
+	&nbsp;</div>
+<div>
+	<span style="font-size:12px;">Important:</span></div>
+<div>
+	<span style="font-size:12px;">We ask you in particular to note the use of the &rsquo; apostrophe and not the &#39; representing the avagrāha in Sanskrit, and most important the &rsquo;a-chuṅ in Tibetan. On the Mac the &rsquo; is Alt-M.</span></div>
+<div>
+	&nbsp;</div>
+<div>
+	<span style="font-size:12px;">If you cannot find the letters on your key-board, you may click on the link &quot;Diacritica&quot; to access it for your search.</span></div>
+</div><!-- diacritical_doc --><div class='clear'></div><select name='searchmode'><option selected value='phrase'>Search for exact phrase</option>
+<option  value='phraseregex'>Search for exact phrase (regex)</option>
+<option  value='word'>Search for every word in one record</option>
+<option  value='free'>Search for every word fragment in one record</option>
+</select>
+<select name='context'>
+<option ($_GET[context]=="a" ? "selected" : "") value="a"> Search in all libraries</option><option selected value="bTLB">Search in TLB</option><option selected value="v37">Search in Vimalakīrtinirdeśa</option></select><div class='clear'></div><a class='sbutton' href='/polyglotta/index.php?page=asearch&amp;bid=2&amp;vid=37'>Choose specific texts..</a><div class='clear'></div></div></form></div><!-- sok --><div class='clear'></div><!-- clear --><div id='dcr' class='divControlRead'><div class='venstrefulltekstfelt'><div class='bverknavn'><a href='/polyglotta/index.php?page=volume&amp;vid=37'>Vimalakīrtinirdeśa</a></div><table class="tlvl2">
+					<tr>
+						<td bgcolor="#ffffff"> &nbsp; &nbsp;
+						<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_7627.Verses41-58" border=0 hspace=2>
+						<a href="/polyglotta/index.php?page=fulltext&amp;view=fulltext&amp;vid=37" class="ajax_tree0">Complete text</a>
+						</td>
+					</tr>
+				  </table><input type="hidden" name="tree_top_options" id="tree_top_options" value="9118.Title|9119.Preface|9120.ChapterI:Buddhakṣetrapariśuddhinidāna|9143.ChapterII:Acintyopāyakauśalyaparivarta|9159.ChapterIII:Śrāvakabodhisatvavisarjanapraśna|9246.ChapterIV:Glānapratisaṃmodanāparivarta|9269.ChapterV:Acintyavimokṣasaṃdarśanaparivarta|9292.ChapterVI:Devatāparivartaḥ|9311.ChapterVII:Tathāgatagotraparivarta|9319.ChapterVIII:Advayadharmamukhapraveśaparivarta|9357.ChapterIX:Nirmitabhojanānayanaparivarta|9378.ChapterX:Kṣayākṣayo|9401.ChapterXI:Abhiratilokadhātvānayanākṣobhyatathāgatadarśanaparivarta|9412.ChapterXII:Nigamanaparīndanāparivarta|9439.Colophon|">
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9118.Title" border=0 hspace=2><a id="href_9118.Title" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=129019&level=1&cid=49185" class="ajax_tree0">Title
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9119.Preface" border=0 hspace=2><a id="href_9119.Preface" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=129020&level=1&cid=49186" class="ajax_tree0">Preface
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<a href="javascript:;" onclick="Expand('9120.ChapterI:Buddhakṣetrapariśuddhinidāna','0','1')"><img src="./application/class/images/collapsed.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="img_9120.ChapterI:Buddhakṣetrapariśuddhinidāna" border=0 hspace=2><a id="href_9120.ChapterI:Buddhakṣetrapariśuddhinidāna" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=129021&level=1&cid=49187" class="ajax_tree0">Chapter I: Buddhakṣetrapariśuddhinidāna
+</td></tr></table>
+<div style="display:none;"  id="div_9120.ChapterI:Buddhakṣetrapariśuddhinidāna">
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp; <a href="javascript:;" onclick="Expand('9121.§1-10')"><img src="./application/class/images/collapsed.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="img_9121.§1-10" border=0 hspace=2><a id="href_9121.§1-10" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=129022&level=2&cid=49188" class="ajax_tree1">§1-10
+</td></tr></table>
+<div style="display:none;"  id="div_9121.§1-10">
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9122.§1" border=0 hspace=2><a id="href_9122.§1" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=129022&level=3&cid=49188" class="ajax_tree2">§1
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9123.§2" border=0 hspace=2><a id="href_9123.§2" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=129023&level=3&cid=49189" class="ajax_tree2">§2
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9124.§3" border=0 hspace=2><a id="href_9124.§3" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=129035&level=3&cid=49190" class="ajax_tree2">§3
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9125.§4" border=0 hspace=2><a id="href_9125.§4" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=129085&level=3&cid=49191" class="ajax_tree2">§4
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9126.§5" border=0 hspace=2><a id="href_9126.§5" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=129151&level=3&cid=49192" class="ajax_tree2">§5
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9127.§6" border=0 hspace=2><a id="href_9127.§6" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=129155&level=3&cid=49193" class="ajax_tree2">§6
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9128.§7" border=0 hspace=2><a id="href_9128.§7" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=129157&level=3&cid=49194" class="ajax_tree2">§7
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9129.§8" border=0 hspace=2><a id="href_9129.§8" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=129159&level=3&cid=49195" class="ajax_tree2">§8
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9130.§9" border=0 hspace=2><a id="href_9130.§9" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=129166&level=3&cid=49196" class="ajax_tree2">§9
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9131.§10" border=0 hspace=2><a id="href_9131.§10" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=129167&level=3&cid=49197" class="ajax_tree2">§10
+</td></tr></table>
+</div>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp; <a href="javascript:;" onclick="Expand('9132.§11-20')"><img src="./application/class/images/collapsed.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="img_9132.§11-20" border=0 hspace=2><a id="href_9132.§11-20" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=129185&level=2&cid=49199" class="ajax_tree1">§11-20
+</td></tr></table>
+<div style="display:none;"  id="div_9132.§11-20">
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9133.§11" border=0 hspace=2><a id="href_9133.§11" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=129185&level=3&cid=49199" class="ajax_tree2">§11
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9134.§12" border=0 hspace=2><a id="href_9134.§12" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=129191&level=3&cid=49202" class="ajax_tree2">§12
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9135.§13" border=0 hspace=2><a id="href_9135.§13" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=129199&level=3&cid=49203" class="ajax_tree2">§13
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9136.§14" border=0 hspace=2><a id="href_9136.§14" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=129217&level=3&cid=49221" class="ajax_tree2">§14
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9137.§15" border=0 hspace=2><a id="href_9137.§15" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=129233&level=3&cid=49223" class="ajax_tree2">§15
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9138.§16" border=0 hspace=2><a id="href_9138.§16" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=129238&level=3&cid=49227" class="ajax_tree2">§16
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9139.§17" border=0 hspace=2><a id="href_9139.§17" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=129244&level=3&cid=49230" class="ajax_tree2">§17
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9140.§18" border=0 hspace=2><a id="href_9140.§18" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=129247&level=3&cid=49231" class="ajax_tree2">§18
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9141.§19" border=0 hspace=2><a id="href_9141.§19" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=129251&level=3&cid=49234" class="ajax_tree2">§19
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9142.§20" border=0 hspace=2><a id="href_9142.§20" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=129253&level=3&cid=49235" class="ajax_tree2">§20
+</td></tr></table>
+</div>
+</div>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<a href="javascript:;" onclick="Expand('9143.ChapterII:Acintyopāyakauśalyaparivarta','0','1')"><img src="./application/class/images/collapsed.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="img_9143.ChapterII:Acintyopāyakauśalyaparivarta" border=0 hspace=2><a id="href_9143.ChapterII:Acintyopāyakauśalyaparivarta" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=129258&level=1&cid=49237" class="ajax_tree0">Chapter II: Acintyopāyakauśalyaparivarta
+</td></tr></table>
+<div style="display:none;"  id="div_9143.ChapterII:Acintyopāyakauśalyaparivarta">
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp; <a href="javascript:;" onclick="Expand('9144.§1-10')"><img src="./application/class/images/collapsed.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="img_9144.§1-10" border=0 hspace=2><a id="href_9144.§1-10" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=129259&level=2&cid=49238" class="ajax_tree1">§1-10
+</td></tr></table>
+<div style="display:none;"  id="div_9144.§1-10">
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9145.§1" border=0 hspace=2><a id="href_9145.§1" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=129259&level=3&cid=49238" class="ajax_tree2">§1
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9146.§2" border=0 hspace=2><a id="href_9146.§2" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=129282&level=3&cid=49239" class="ajax_tree2">§2
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9147.§3" border=0 hspace=2><a id="href_9147.§3" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=129288&level=3&cid=49240" class="ajax_tree2">§3
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9148.§4" border=0 hspace=2><a id="href_9148.§4" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=129298&level=3&cid=49241" class="ajax_tree2">§4
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9149.§5" border=0 hspace=2><a id="href_9149.§5" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=129305&level=3&cid=49248" class="ajax_tree2">§5
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9150.§6" border=0 hspace=2><a id="href_9150.§6" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=129312&level=3&cid=49255" class="ajax_tree2">§6
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9151.§7" border=0 hspace=2><a id="href_9151.§7" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=129317&level=3&cid=49260" class="ajax_tree2">§7
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9152.§8" border=0 hspace=2><a id="href_9152.§8" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=129319&level=3&cid=49261" class="ajax_tree2">§8
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9153.§9" border=0 hspace=2><a id="href_9153.§9" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=129323&level=3&cid=49262" class="ajax_tree2">§9
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9154.§10" border=0 hspace=2><a id="href_9154.§10" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=129335&level=3&cid=49274" class="ajax_tree2">§10
+</td></tr></table>
+</div>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp; <a href="javascript:;" onclick="Expand('9155.§11-13')"><img src="./application/class/images/collapsed.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="img_9155.§11-13" border=0 hspace=2><a id="href_9155.§11-13" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=129340&level=2&cid=49279" class="ajax_tree1">§11-13
+</td></tr></table>
+<div style="display:none;"  id="div_9155.§11-13">
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9156.§11" border=0 hspace=2><a id="href_9156.§11" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=129340&level=3&cid=49279" class="ajax_tree2">§11
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9157.§12" border=0 hspace=2><a id="href_9157.§12" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=129351&level=3&cid=49290" class="ajax_tree2">§12
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9158.§13" border=0 hspace=2><a id="href_9158.§13" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=129373&level=3&cid=49291" class="ajax_tree2">§13
+</td></tr></table>
+</div>
+</div>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<a href="javascript:;" onclick="Expand('9159.ChapterIII:Śrāvakabodhisatvavisarjanapraśna','0','1')"><img src="./application/class/images/collapsed.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="img_9159.ChapterIII:Śrāvakabodhisatvavisarjanapraśna" border=0 hspace=2><a id="href_9159.ChapterIII:Śrāvakabodhisatvavisarjanapraśna" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=129375&level=1&cid=49293" class="ajax_tree0">Chapter III: Śrāvakabodhisatvavisarjanapraśna
+</td></tr></table>
+<div style="display:none;"  id="div_9159.ChapterIII:Śrāvakabodhisatvavisarjanapraśna">
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp; <a href="javascript:;" onclick="Expand('9160.§1-10')"><img src="./application/class/images/collapsed.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="img_9160.§1-10" border=0 hspace=2><a id="href_9160.§1-10" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=129376&level=2&cid=49294" class="ajax_tree1">§1-10
+</td></tr></table>
+<div style="display:none;"  id="div_9160.§1-10">
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9161.§1" border=0 hspace=2><a id="href_9161.§1" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=129376&level=3&cid=49294" class="ajax_tree2">§1
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9162.§2" border=0 hspace=2><a id="href_9162.§2" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=129380&level=3&cid=49295" class="ajax_tree2">§2
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9163.§3" border=0 hspace=2><a id="href_9163.§3" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=129387&level=3&cid=49297" class="ajax_tree2">§3
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9164.§4" border=0 hspace=2><a id="href_9164.§4" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=129395&level=3&cid=49298" class="ajax_tree2">§4
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9165.§5" border=0 hspace=2><a id="href_9165.§5" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=129397&level=3&cid=49299" class="ajax_tree2">§5
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9166.§6" border=0 hspace=2><a id="href_9166.§6" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=129402&level=3&cid=49301" class="ajax_tree2">§6
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9167.§7" border=0 hspace=2><a id="href_9167.§7" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=129429&level=3&cid=49302" class="ajax_tree2">§7
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9168.§8" border=0 hspace=2><a id="href_9168.§8" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=129434&level=3&cid=49303" class="ajax_tree2">§8
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9169.§9" border=0 hspace=2><a id="href_9169.§9" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=129439&level=3&cid=49304" class="ajax_tree2">§9
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9170.§10" border=0 hspace=2><a id="href_9170.§10" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=129442&level=3&cid=49305" class="ajax_tree2">§10
+</td></tr></table>
+</div>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp; <a href="javascript:;" onclick="Expand('9171.§11-21')"><img src="./application/class/images/collapsed.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="img_9171.§11-21" border=0 hspace=2><a id="href_9171.§11-21" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=129447&level=2&cid=49307" class="ajax_tree1">§11-21
+</td></tr></table>
+<div style="display:none;"  id="div_9171.§11-21">
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9172.§11" border=0 hspace=2><a id="href_9172.§11" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=129447&level=3&cid=49307" class="ajax_tree2">§11
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9173.§12" border=0 hspace=2><a id="href_9173.§12" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=129455&level=3&cid=49308" class="ajax_tree2">§12
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9174.§13" border=0 hspace=2><a id="href_9174.§13" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=129464&level=3&cid=49309" class="ajax_tree2">§13
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9175.§14" border=0 hspace=2><a id="href_9175.§14" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=129474&level=3&cid=49310" class="ajax_tree2">§14
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9176.§15" border=0 hspace=2><a id="href_9176.§15" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=129478&level=3&cid=49311" class="ajax_tree2">§15
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9177.§16" border=0 hspace=2><a id="href_9177.§16" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=129484&level=3&cid=49313" class="ajax_tree2">§16
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9178.§17" border=0 hspace=2><a id="href_9178.§17" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=129495&level=3&cid=49314" class="ajax_tree2">§17
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9179.§18" border=0 hspace=2><a id="href_9179.§18" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=129498&level=3&cid=49315" class="ajax_tree2">§18
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9180.§19" border=0 hspace=2><a id="href_9180.§19" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=129510&level=3&cid=49316" class="ajax_tree2">§19
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9181.§20" border=0 hspace=2><a id="href_9181.§20" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=129518&level=3&cid=49320" class="ajax_tree2">§20
+</td></tr></table>
+</div>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp; <a href="javascript:;" onclick="Expand('9182.§1-21')"><img src="./application/class/images/collapsed.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="img_9182.§1-21" border=0 hspace=2><a id="href_9182.§1-21" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=129522&level=2&cid=49321" class="ajax_tree1">§1-21
+</td></tr></table>
+<div style="display:none;"  id="div_9182.§1-21">
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9183.§21" border=0 hspace=2><a id="href_9183.§21" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=129522&level=3&cid=49321" class="ajax_tree2">§21
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9184.§22" border=0 hspace=2><a id="href_9184.§22" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=129528&level=3&cid=49324" class="ajax_tree2">§22
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9185.§23" border=0 hspace=2><a id="href_9185.§23" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=129542&level=3&cid=49325" class="ajax_tree2">§23
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9186.§24" border=0 hspace=2><a id="href_9186.§24" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=129546&level=3&cid=49326" class="ajax_tree2">§24
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9187.§25" border=0 hspace=2><a id="href_9187.§25" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=129547&level=3&cid=49327" class="ajax_tree2">§25
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9188.§26" border=0 hspace=2><a id="href_9188.§26" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=129554&level=3&cid=49330" class="ajax_tree2">§26
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9189.§27" border=0 hspace=2><a id="href_9189.§27" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=129560&level=3&cid=49331" class="ajax_tree2">§27
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9190.§28" border=0 hspace=2><a id="href_9190.§28" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=129562&level=3&cid=49332" class="ajax_tree2">§28
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9191.§29" border=0 hspace=2><a id="href_9191.§29" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=129566&level=3&cid=49334" class="ajax_tree2">§29
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9192.§30" border=0 hspace=2><a id="href_9192.§30" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=129570&level=3&cid=49336" class="ajax_tree2">§30
+</td></tr></table>
+</div>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp; <a href="javascript:;" onclick="Expand('9193.§31-40')"><img src="./application/class/images/collapsed.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="img_9193.§31-40" border=0 hspace=2><a id="href_9193.§31-40" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=129577&level=2&cid=49338" class="ajax_tree1">§31-40
+</td></tr></table>
+<div style="display:none;"  id="div_9193.§31-40">
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9194.§31" border=0 hspace=2><a id="href_9194.§31" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=129577&level=3&cid=49338" class="ajax_tree2">§31
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9195.§32" border=0 hspace=2><a id="href_9195.§32" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=129580&level=3&cid=49340" class="ajax_tree2">§32
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9196.§33" border=0 hspace=2><a id="href_9196.§33" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=129583&level=3&cid=49341" class="ajax_tree2">§33
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9197.§34" border=0 hspace=2><a id="href_9197.§34" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=129591&level=3&cid=49343" class="ajax_tree2">§34
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9198.§35" border=0 hspace=2><a id="href_9198.§35" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=129600&level=3&cid=49346" class="ajax_tree2">§35
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9199.§36" border=0 hspace=2><a id="href_9199.§36" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=129609&level=3&cid=49347" class="ajax_tree2">§36
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9200.§37" border=0 hspace=2><a id="href_9200.§37" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=129614&level=3&cid=49349" class="ajax_tree2">§37
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9201.§38" border=0 hspace=2><a id="href_9201.§38" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=129618&level=3&cid=49350" class="ajax_tree2">§38
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9202.§39" border=0 hspace=2><a id="href_9202.§39" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=129627&level=3&cid=49353" class="ajax_tree2">§39
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9203.§40" border=0 hspace=2><a id="href_9203.§40" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=129646&level=3&cid=49354" class="ajax_tree2">§40
+</td></tr></table>
+</div>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp; <a href="javascript:;" onclick="Expand('9204.§41-50')"><img src="./application/class/images/collapsed.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="img_9204.§41-50" border=0 hspace=2><a id="href_9204.§41-50" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=129652&level=2&cid=49357" class="ajax_tree1">§41-50
+</td></tr></table>
+<div style="display:none;"  id="div_9204.§41-50">
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9205.§41" border=0 hspace=2><a id="href_9205.§41" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=129652&level=3&cid=49357" class="ajax_tree2">§41
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9206.§42" border=0 hspace=2><a id="href_9206.§42" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=129654&level=3&cid=49358" class="ajax_tree2">§42
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9207.§43" border=0 hspace=2><a id="href_9207.§43" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=129661&level=3&cid=49361" class="ajax_tree2">§43
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9208.§44" border=0 hspace=2><a id="href_9208.§44" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=129668&level=3&cid=49364" class="ajax_tree2">§44
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9209.§45" border=0 hspace=2><a id="href_9209.§45" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=129678&level=3&cid=49365" class="ajax_tree2">§45
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9210.§46" border=0 hspace=2><a id="href_9210.§46" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=129683&level=3&cid=49366" class="ajax_tree2">§46
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9211.§47" border=0 hspace=2><a id="href_9211.§47" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=129687&level=3&cid=49368" class="ajax_tree2">§47
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9212.§48" border=0 hspace=2><a id="href_9212.§48" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=129689&level=3&cid=49369" class="ajax_tree2">§48
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9213.§49" border=0 hspace=2><a id="href_9213.§49" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=129692&level=3&cid=49370" class="ajax_tree2">§49
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9214.§50" border=0 hspace=2><a id="href_9214.§50" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=129697&level=3&cid=49372" class="ajax_tree2">§50
+</td></tr></table>
+</div>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp; <a href="javascript:;" onclick="Expand('9215.§51-60')"><img src="./application/class/images/collapsed.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="img_9215.§51-60" border=0 hspace=2><a id="href_9215.§51-60" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=129705&level=2&cid=49373" class="ajax_tree1">§51-60
+</td></tr></table>
+<div style="display:none;"  id="div_9215.§51-60">
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9216.§51" border=0 hspace=2><a id="href_9216.§51" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=129705&level=3&cid=49373" class="ajax_tree2">§51
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9217.§52" border=0 hspace=2><a id="href_9217.§52" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=129722&level=3&cid=49374" class="ajax_tree2">§52
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9218.§53" border=0 hspace=2><a id="href_9218.§53" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=129759&level=3&cid=49376" class="ajax_tree2">§53
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9219.§54" border=0 hspace=2><a id="href_9219.§54" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=129762&level=3&cid=49377" class="ajax_tree2">§54
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9220.§55" border=0 hspace=2><a id="href_9220.§55" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=129772&level=3&cid=49382" class="ajax_tree2">§55
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9221.§56" border=0 hspace=2><a id="href_9221.§56" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=129776&level=3&cid=49383" class="ajax_tree2">§56
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9222.§57" border=0 hspace=2><a id="href_9222.§57" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=129782&level=3&cid=49384" class="ajax_tree2">§57
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9223.§58" border=0 hspace=2><a id="href_9223.§58" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=129786&level=3&cid=49385" class="ajax_tree2">§58
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9224.§59" border=0 hspace=2><a id="href_9224.§59" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=129796&level=3&cid=49386" class="ajax_tree2">§59
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9225.§60" border=0 hspace=2><a id="href_9225.§60" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=129804&level=3&cid=49387" class="ajax_tree2">§60
+</td></tr></table>
+</div>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp; <a href="javascript:;" onclick="Expand('9226.§61-70')"><img src="./application/class/images/collapsed.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="img_9226.§61-70" border=0 hspace=2><a id="href_9226.§61-70" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=129809&level=2&cid=49388" class="ajax_tree1">§61-70
+</td></tr></table>
+<div style="display:none;"  id="div_9226.§61-70">
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9227.§61" border=0 hspace=2><a id="href_9227.§61" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=129809&level=3&cid=49388" class="ajax_tree2">§61
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9228.§62" border=0 hspace=2><a id="href_9228.§62" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=129812&level=3&cid=49389" class="ajax_tree2">§62
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9229.§63" border=0 hspace=2><a id="href_9229.§63" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=129829&level=3&cid=49394" class="ajax_tree2">§63
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9230.§64" border=0 hspace=2><a id="href_9230.§64" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=129842&level=3&cid=49397" class="ajax_tree2">§64
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9231.§65" border=0 hspace=2><a id="href_9231.§65" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=129888&level=3&cid=49401" class="ajax_tree2">§65
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9232.§66" border=0 hspace=2><a id="href_9232.§66" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=129903&level=3&cid=49406" class="ajax_tree2">§66
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9233.§67" border=0 hspace=2><a id="href_9233.§67" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=129914&level=3&cid=49407" class="ajax_tree2">§67
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9234.§68" border=0 hspace=2><a id="href_9234.§68" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=129917&level=3&cid=49408" class="ajax_tree2">§68
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9235.§69" border=0 hspace=2><a id="href_9235.§69" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=129930&level=3&cid=49413" class="ajax_tree2">§69
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9236.§70" border=0 hspace=2><a id="href_9236.§70" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=129938&level=3&cid=49414" class="ajax_tree2">§70
+</td></tr></table>
+</div>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp; <a href="javascript:;" onclick="Expand('9237.§71-78')"><img src="./application/class/images/collapsed.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="img_9237.§71-78" border=0 hspace=2><a id="href_9237.§71-78" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=129946&level=2&cid=49415" class="ajax_tree1">§71-78
+</td></tr></table>
+<div style="display:none;"  id="div_9237.§71-78">
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9238.§71" border=0 hspace=2><a id="href_9238.§71" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=129946&level=3&cid=49415" class="ajax_tree2">§71
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9239.§72" border=0 hspace=2><a id="href_9239.§72" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=129949&level=3&cid=49416" class="ajax_tree2">§72
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9240.§73" border=0 hspace=2><a id="href_9240.§73" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=129963&level=3&cid=49417" class="ajax_tree2">§73
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9241.§74" border=0 hspace=2><a id="href_9241.§74" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=129967&level=3&cid=49418" class="ajax_tree2">§74
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9242.§75" border=0 hspace=2><a id="href_9242.§75" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=129971&level=3&cid=49420" class="ajax_tree2">§75
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9243.§76" border=0 hspace=2><a id="href_9243.§76" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=129980&level=3&cid=49422" class="ajax_tree2">§76
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9244.§77" border=0 hspace=2><a id="href_9244.§77" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=129984&level=3&cid=49423" class="ajax_tree2">§77
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9245.§78" border=0 hspace=2><a id="href_9245.§78" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=129990&level=3&cid=49424" class="ajax_tree2">§78
+</td></tr></table>
+</div>
+</div>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<a href="javascript:;" onclick="Expand('9246.ChapterIV:Glānapratisaṃmodanāparivarta','0','1')"><img src="./application/class/images/collapsed.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="img_9246.ChapterIV:Glānapratisaṃmodanāparivarta" border=0 hspace=2><a id="href_9246.ChapterIV:Glānapratisaṃmodanāparivarta" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=129993&level=1&cid=49426" class="ajax_tree0">Chapter IV: Glānapratisaṃmodanāparivarta
+</td></tr></table>
+<div style="display:none;"  id="div_9246.ChapterIV:Glānapratisaṃmodanāparivarta">
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp; <a href="javascript:;" onclick="Expand('9247.§1-10')"><img src="./application/class/images/collapsed.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="img_9247.§1-10" border=0 hspace=2><a id="href_9247.§1-10" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=129994&level=2&cid=49427" class="ajax_tree1">§1-10
+</td></tr></table>
+<div style="display:none;"  id="div_9247.§1-10">
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9248.§1" border=0 hspace=2><a id="href_9248.§1" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=129994&level=3&cid=49427" class="ajax_tree2">§1
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9249.§2" border=0 hspace=2><a id="href_9249.§2" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=130013&level=3&cid=49429" class="ajax_tree2">§2
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9250.§3" border=0 hspace=2><a id="href_9250.§3" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=130018&level=3&cid=49430" class="ajax_tree2">§3
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9251.§4" border=0 hspace=2><a id="href_9251.§4" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=130024&level=3&cid=49431" class="ajax_tree2">§4
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9252.§5" border=0 hspace=2><a id="href_9252.§5" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=130037&level=3&cid=49433" class="ajax_tree2">§5
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9253.§6" border=0 hspace=2><a id="href_9253.§6" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=130041&level=3&cid=49434" class="ajax_tree2">§6
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9254.§7" border=0 hspace=2><a id="href_9254.§7" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=130052&level=3&cid=49436" class="ajax_tree2">§7
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9255.§8" border=0 hspace=2><a id="href_9255.§8" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=130059&level=3&cid=49437" class="ajax_tree2">§8
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9256.§9" border=0 hspace=2><a id="href_9256.§9" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=130083&level=3&cid=49451" class="ajax_tree2">§9
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9257.§10" border=0 hspace=2><a id="href_9257.§10" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=130094&level=3&cid=49457" class="ajax_tree2">§10
+</td></tr></table>
+</div>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp; <a href="javascript:;" onclick="Expand('9258.§11-20')"><img src="./application/class/images/collapsed.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="img_9258.§11-20" border=0 hspace=2><a id="href_9258.§11-20" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=130109&level=2&cid=49459" class="ajax_tree1">§11-20
+</td></tr></table>
+<div style="display:none;"  id="div_9258.§11-20">
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9259.§11" border=0 hspace=2><a id="href_9259.§11" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=130109&level=3&cid=49459" class="ajax_tree2">§11
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9260.§12" border=0 hspace=2><a id="href_9260.§12" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=130126&level=3&cid=49461" class="ajax_tree2">§12
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9261.§13" border=0 hspace=2><a id="href_9261.§13" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=130151&level=3&cid=49462" class="ajax_tree2">§13
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9262.§14" border=0 hspace=2><a id="href_9262.§14" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=130155&level=3&cid=49463" class="ajax_tree2">§14
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9263.§15" border=0 hspace=2><a id="href_9263.§15" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=130173&level=3&cid=49464" class="ajax_tree2">§15
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9264.§16" border=0 hspace=2><a id="href_9264.§16" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=130187&level=3&cid=49465" class="ajax_tree2">§16
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9265.§17" border=0 hspace=2><a id="href_9265.§17" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=130196&level=3&cid=49466" class="ajax_tree2">§17
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9266.§18" border=0 hspace=2><a id="href_9266.§18" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=130209&level=3&cid=49467" class="ajax_tree2">§18
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9267.§19" border=0 hspace=2><a id="href_9267.§19" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=130215&level=3&cid=49468" class="ajax_tree2">§19
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9268.§20" border=0 hspace=2><a id="href_9268.§20" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=130222&level=3&cid=49469" class="ajax_tree2">§20
+</td></tr></table>
+</div>
+</div>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<a href="javascript:;" onclick="Expand('9269.ChapterV:Acintyavimokṣasaṃdarśanaparivarta','0','1')"><img src="./application/class/images/collapsed.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="img_9269.ChapterV:Acintyavimokṣasaṃdarśanaparivarta" border=0 hspace=2><a id="href_9269.ChapterV:Acintyavimokṣasaṃdarśanaparivarta" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=130262&level=1&cid=49472" class="ajax_tree0">Chapter V: Acintyavimokṣasaṃdarśanaparivarta
+</td></tr></table>
+<div style="display:none;"  id="div_9269.ChapterV:Acintyavimokṣasaṃdarśanaparivarta">
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp; <a href="javascript:;" onclick="Expand('9270.§1-10')"><img src="./application/class/images/collapsed.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="img_9270.§1-10" border=0 hspace=2><a id="href_9270.§1-10" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=130263&level=2&cid=49473" class="ajax_tree1">§1-10
+</td></tr></table>
+<div style="display:none;"  id="div_9270.§1-10">
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9271.§1" border=0 hspace=2><a id="href_9271.§1" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=130263&level=3&cid=49473" class="ajax_tree2">§1
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9272.§2" border=0 hspace=2><a id="href_9272.§2" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=130267&level=3&cid=49475" class="ajax_tree2">§2
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9273.§3" border=0 hspace=2><a id="href_9273.§3" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=130274&level=3&cid=49476" class="ajax_tree2">§3
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9274.§4" border=0 hspace=2><a id="href_9274.§4" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=130296&level=3&cid=49477" class="ajax_tree2">§4
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9275.§5" border=0 hspace=2><a id="href_9275.§5" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=130308&level=3&cid=49478" class="ajax_tree2">§5
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9276.§6" border=0 hspace=2><a id="href_9276.§6" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=130313&level=3&cid=49479" class="ajax_tree2">§6
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9277.§7" border=0 hspace=2><a id="href_9277.§7" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=130324&level=3&cid=49480" class="ajax_tree2">§7
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9278.§8" border=0 hspace=2><a id="href_9278.§8" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=130334&level=3&cid=49481" class="ajax_tree2">§8
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9279.§9" border=0 hspace=2><a id="href_9279.§9" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=130346&level=3&cid=49487" class="ajax_tree2">§9
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9280.§10" border=0 hspace=2><a id="href_9280.§10" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=130351&level=3&cid=49488" class="ajax_tree2">§10
+</td></tr></table>
+</div>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp; <a href="javascript:;" onclick="Expand('9281.§11-20')"><img src="./application/class/images/collapsed.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="img_9281.§11-20" border=0 hspace=2><a id="href_9281.§11-20" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=130359&level=2&cid=49489" class="ajax_tree1">§11-20
+</td></tr></table>
+<div style="display:none;"  id="div_9281.§11-20">
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9282.§11" border=0 hspace=2><a id="href_9282.§11" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=130359&level=3&cid=49489" class="ajax_tree2">§11
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9283.§12" border=0 hspace=2><a id="href_9283.§12" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=130365&level=3&cid=49490" class="ajax_tree2">§12
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9284.§13" border=0 hspace=2><a id="href_9284.§13" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=130371&level=3&cid=49491" class="ajax_tree2">§13
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9285.§14" border=0 hspace=2><a id="href_9285.§14" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=130376&level=3&cid=49492" class="ajax_tree2">§14
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9286.§15" border=0 hspace=2><a id="href_9286.§15" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=130385&level=3&cid=49493" class="ajax_tree2">§15
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9287.§16" border=0 hspace=2><a id="href_9287.§16" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=130392&level=3&cid=49494" class="ajax_tree2">§16
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9288.§17" border=0 hspace=2><a id="href_9288.§17" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=130395&level=3&cid=49495" class="ajax_tree2">§17
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9289.§18" border=0 hspace=2><a id="href_9289.§18" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=130401&level=3&cid=49496" class="ajax_tree2">§18
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9290.§19" border=0 hspace=2><a id="href_9290.§19" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=130404&level=3&cid=49497" class="ajax_tree2">§19
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9291.§20" border=0 hspace=2><a id="href_9291.§20" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=130414&level=3&cid=49498" class="ajax_tree2">§20
+</td></tr></table>
+</div>
+</div>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<a href="javascript:;" onclick="Expand('9292.ChapterVI:Devatāparivartaḥ','0','1')"><img src="./application/class/images/collapsed.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="img_9292.ChapterVI:Devatāparivartaḥ" border=0 hspace=2><a id="href_9292.ChapterVI:Devatāparivartaḥ" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=130437&level=1&cid=49501" class="ajax_tree0">Chapter VI: Devatāparivartaḥ
+</td></tr></table>
+<div style="display:none;"  id="div_9292.ChapterVI:Devatāparivartaḥ">
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp; <a href="javascript:;" onclick="Expand('9293.§1-10')"><img src="./application/class/images/collapsed.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="img_9293.§1-10" border=0 hspace=2><a id="href_9293.§1-10" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=130438&level=2&cid=49502" class="ajax_tree1">§1-10
+</td></tr></table>
+<div style="display:none;"  id="div_9293.§1-10">
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9294.§1" border=0 hspace=2><a id="href_9294.§1" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=130438&level=3&cid=49502" class="ajax_tree2">§1
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9295.§2" border=0 hspace=2><a id="href_9295.§2" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=130508&level=3&cid=49504" class="ajax_tree2">§2
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9296.§3" border=0 hspace=2><a id="href_9296.§3" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=130548&level=3&cid=49506" class="ajax_tree2">§3
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9297.§4" border=0 hspace=2><a id="href_9297.§4" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=130555&level=3&cid=49512" class="ajax_tree2">§4
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9298.§5" border=0 hspace=2><a id="href_9298.§5" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=130561&level=3&cid=49518" class="ajax_tree2">§5
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9299.§6" border=0 hspace=2><a id="href_9299.§6" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=130575&level=3&cid=49532" class="ajax_tree2">§6
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9300.§7" border=0 hspace=2><a id="href_9300.§7" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=130583&level=3&cid=49538" class="ajax_tree2">§7
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9301.§8" border=0 hspace=2><a id="href_9301.§8" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=130591&level=3&cid=49539" class="ajax_tree2">§8
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9302.§9" border=0 hspace=2><a id="href_9302.§9" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=130615&level=3&cid=49540" class="ajax_tree2">§9
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9303.§10" border=0 hspace=2><a id="href_9303.§10" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=130633&level=3&cid=49550" class="ajax_tree2">§10
+</td></tr></table>
+</div>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp; <a href="javascript:;" onclick="Expand('9304.§11-16')"><img src="./application/class/images/collapsed.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="img_9304.§11-16" border=0 hspace=2><a id="href_9304.§11-16" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=130640&level=2&cid=49552" class="ajax_tree1">§11-16
+</td></tr></table>
+<div style="display:none;"  id="div_9304.§11-16">
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9305.§11" border=0 hspace=2><a id="href_9305.§11" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=130640&level=3&cid=49552" class="ajax_tree2">§11
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9306.§12" border=0 hspace=2><a id="href_9306.§12" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=130646&level=3&cid=49554" class="ajax_tree2">§12
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9307.§13" border=0 hspace=2><a id="href_9307.§13" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=130652&level=3&cid=49555" class="ajax_tree2">§13
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9308.§14" border=0 hspace=2><a id="href_9308.§14" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=130688&level=3&cid=49565" class="ajax_tree2">§14
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9309.§15" border=0 hspace=2><a id="href_9309.§15" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=130698&level=3&cid=49569" class="ajax_tree2">§15
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9310.§16" border=0 hspace=2><a id="href_9310.§16" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=130740&level=3&cid=49587" class="ajax_tree2">§16
+</td></tr></table>
+</div>
+</div>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<a href="javascript:;" onclick="Expand('9311.ChapterVII:Tathāgatagotraparivarta','0','1')"><img src="./application/class/images/collapsed.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="img_9311.ChapterVII:Tathāgatagotraparivarta" border=0 hspace=2><a id="href_9311.ChapterVII:Tathāgatagotraparivarta" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=130746&level=1&cid=49589" class="ajax_tree0">Chapter VII: Tathāgatagotraparivarta
+</td></tr></table>
+<div style="display:none;"  id="div_9311.ChapterVII:Tathāgatagotraparivarta">
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp; <a href="javascript:;" onclick="Expand('9312.§1-6')"><img src="./application/class/images/collapsed.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="img_9312.§1-6" border=0 hspace=2><a id="href_9312.§1-6" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=130747&level=2&cid=49590" class="ajax_tree1">§1-6
+</td></tr></table>
+<div style="display:none;"  id="div_9312.§1-6">
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9313.§1" border=0 hspace=2><a id="href_9313.§1" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=130747&level=3&cid=49590" class="ajax_tree2">§1
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9314.§2" border=0 hspace=2><a id="href_9314.§2" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=130818&level=3&cid=49594" class="ajax_tree2">§2
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9315.§3" border=0 hspace=2><a id="href_9315.§3" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=130833&level=3&cid=49596" class="ajax_tree2">§3
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9316.§4" border=0 hspace=2><a id="href_9316.§4" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=130850&level=3&cid=49598" class="ajax_tree2">§4
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9317.§5" border=0 hspace=2><a id="href_9317.§5" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=130859&level=3&cid=49599" class="ajax_tree2">§5
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9318.§6" border=0 hspace=2><a id="href_9318.§6" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=130869&level=3&cid=49600" class="ajax_tree2">§6
+</td></tr></table>
+</div>
+</div>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<a href="javascript:;" onclick="Expand('9319.ChapterVIII:Advayadharmamukhapraveśaparivarta','0','1')"><img src="./application/class/images/collapsed.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="img_9319.ChapterVIII:Advayadharmamukhapraveśaparivarta" border=0 hspace=2><a id="href_9319.ChapterVIII:Advayadharmamukhapraveśaparivarta" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=130916&level=1&cid=49603" class="ajax_tree0">Chapter VIII: Advayadharmamukhapraveśaparivarta
+</td></tr></table>
+<div style="display:none;"  id="div_9319.ChapterVIII:Advayadharmamukhapraveśaparivarta">
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp; <a href="javascript:;" onclick="Expand('9320.§1-10')"><img src="./application/class/images/collapsed.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="img_9320.§1-10" border=0 hspace=2><a id="href_9320.§1-10" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=130917&level=2&cid=49604" class="ajax_tree1">§1-10
+</td></tr></table>
+<div style="display:none;"  id="div_9320.§1-10">
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9321.§1" border=0 hspace=2><a id="href_9321.§1" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=130917&level=3&cid=49604" class="ajax_tree2">§1
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9322.§2" border=0 hspace=2><a id="href_9322.§2" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=130924&level=3&cid=49606" class="ajax_tree2">§2
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9323.§3" border=0 hspace=2><a id="href_9323.§3" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=130928&level=3&cid=49607" class="ajax_tree2">§3
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9324.§4" border=0 hspace=2><a id="href_9324.§4" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=130932&level=3&cid=49608" class="ajax_tree2">§4
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9325.§5" border=0 hspace=2><a id="href_9325.§5" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=130935&level=3&cid=49609" class="ajax_tree2">§5
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9326.§6" border=0 hspace=2><a id="href_9326.§6" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=130939&level=3&cid=49610" class="ajax_tree2">§6
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9327.§7" border=0 hspace=2><a id="href_9327.§7" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=130943&level=3&cid=49611" class="ajax_tree2">§7
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9328.§8" border=0 hspace=2><a id="href_9328.§8" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=130947&level=3&cid=49612" class="ajax_tree2">§8
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9329.§9" border=0 hspace=2><a id="href_9329.§9" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=130951&level=3&cid=49613" class="ajax_tree2">§9
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9330.§10" border=0 hspace=2><a id="href_9330.§10" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=130955&level=3&cid=49614" class="ajax_tree2">§10
+</td></tr></table>
+</div>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp; <a href="javascript:;" onclick="Expand('9331.§11-20')"><img src="./application/class/images/collapsed.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="img_9331.§11-20" border=0 hspace=2><a id="href_9331.§11-20" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=130960&level=2&cid=49615" class="ajax_tree1">§11-20
+</td></tr></table>
+<div style="display:none;"  id="div_9331.§11-20">
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9332.§11" border=0 hspace=2><a id="href_9332.§11" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=130960&level=3&cid=49615" class="ajax_tree2">§11
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9333.§12" border=0 hspace=2><a id="href_9333.§12" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=130963&level=3&cid=49616" class="ajax_tree2">§12
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9334.§13" border=0 hspace=2><a id="href_9334.§13" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=130969&level=3&cid=49617" class="ajax_tree2">§13
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9335.§14" border=0 hspace=2><a id="href_9335.§14" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=130973&level=3&cid=49618" class="ajax_tree2">§14
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9336.§15" border=0 hspace=2><a id="href_9336.§15" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=130983&level=3&cid=49619" class="ajax_tree2">§15
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9337.§16" border=0 hspace=2><a id="href_9337.§16" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=130987&level=3&cid=49620" class="ajax_tree2">§16
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9338.§17" border=0 hspace=2><a id="href_9338.§17" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=130992&level=3&cid=49621" class="ajax_tree2">§17
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9339.§18" border=0 hspace=2><a id="href_9339.§18" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=131005&level=3&cid=49622" class="ajax_tree2">§18
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9340.§19" border=0 hspace=2><a id="href_9340.§19" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=131010&level=3&cid=49623" class="ajax_tree2">§19
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9341.§20" border=0 hspace=2><a id="href_9341.§20" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=131019&level=3&cid=49624" class="ajax_tree2">§20
+</td></tr></table>
+</div>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp; <a href="javascript:;" onclick="Expand('9342.§21-30')"><img src="./application/class/images/collapsed.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="img_9342.§21-30" border=0 hspace=2><a id="href_9342.§21-30" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=131025&level=2&cid=49625" class="ajax_tree1">§21-30
+</td></tr></table>
+<div style="display:none;"  id="div_9342.§21-30">
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9343.§21" border=0 hspace=2><a id="href_9343.§21" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=131025&level=3&cid=49625" class="ajax_tree2">§21
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9344.§22" border=0 hspace=2><a id="href_9344.§22" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=131031&level=3&cid=49626" class="ajax_tree2">§22
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9345.§23" border=0 hspace=2><a id="href_9345.§23" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=131038&level=3&cid=49627" class="ajax_tree2">§23
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9346.§24" border=0 hspace=2><a id="href_9346.§24" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=131046&level=3&cid=49628" class="ajax_tree2">§24
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9347.§25" border=0 hspace=2><a id="href_9347.§25" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=131054&level=3&cid=49629" class="ajax_tree2">§25
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9348.§26" border=0 hspace=2><a id="href_9348.§26" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=131061&level=3&cid=49630" class="ajax_tree2">§26
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9349.§27" border=0 hspace=2><a id="href_9349.§27" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=131066&level=3&cid=49631" class="ajax_tree2">§27
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9350.§28" border=0 hspace=2><a id="href_9350.§28" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=131071&level=3&cid=49632" class="ajax_tree2">§28
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9351.§29" border=0 hspace=2><a id="href_9351.§29" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=131078&level=3&cid=49633" class="ajax_tree2">§29
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9352.§30" border=0 hspace=2><a id="href_9352.§30" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=131085&level=3&cid=49634" class="ajax_tree2">§30
+</td></tr></table>
+</div>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp; <a href="javascript:;" onclick="Expand('9353.§31-33')"><img src="./application/class/images/collapsed.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="img_9353.§31-33" border=0 hspace=2><a id="href_9353.§31-33" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=131090&level=2&cid=49635" class="ajax_tree1">§31-33
+</td></tr></table>
+<div style="display:none;"  id="div_9353.§31-33">
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9354.§31" border=0 hspace=2><a id="href_9354.§31" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=131090&level=3&cid=49635" class="ajax_tree2">§31
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9355.§32" border=0 hspace=2><a id="href_9355.§32" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=131097&level=3&cid=49636" class="ajax_tree2">§32
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9356.§33" border=0 hspace=2><a id="href_9356.§33" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=131104&level=3&cid=49638" class="ajax_tree2">§33
+</td></tr></table>
+</div>
+</div>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<a href="javascript:;" onclick="Expand('9357.ChapterIX:Nirmitabhojanānayanaparivarta','0','1')"><img src="./application/class/images/collapsed.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="img_9357.ChapterIX:Nirmitabhojanānayanaparivarta" border=0 hspace=2><a id="href_9357.ChapterIX:Nirmitabhojanānayanaparivarta" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=131113&level=1&cid=49643" class="ajax_tree0">Chapter IX: Nirmitabhojanānayanaparivarta
+</td></tr></table>
+<div style="display:none;"  id="div_9357.ChapterIX:Nirmitabhojanānayanaparivarta">
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp; <a href="javascript:;" onclick="Expand('9358.§1-10')"><img src="./application/class/images/collapsed.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="img_9358.§1-10" border=0 hspace=2><a id="href_9358.§1-10" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=131114&level=2&cid=49644" class="ajax_tree1">§1-10
+</td></tr></table>
+<div style="display:none;"  id="div_9358.§1-10">
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9359.§1" border=0 hspace=2><a id="href_9359.§1" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=131114&level=3&cid=49644" class="ajax_tree2">§1
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9360.§2" border=0 hspace=2><a id="href_9360.§2" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=131120&level=3&cid=49646" class="ajax_tree2">§2
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9361.§3" border=0 hspace=2><a id="href_9361.§3" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=131133&level=3&cid=49648" class="ajax_tree2">§3
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9362.§4" border=0 hspace=2><a id="href_9362.§4" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=131139&level=3&cid=49651" class="ajax_tree2">§4
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9363.§5" border=0 hspace=2><a id="href_9363.§5" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=131150&level=3&cid=49653" class="ajax_tree2">§5
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9364.§6" border=0 hspace=2><a id="href_9364.§6" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=131161&level=3&cid=49656" class="ajax_tree2">§6
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9365.§7" border=0 hspace=2><a id="href_9365.§7" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=131172&level=3&cid=49658" class="ajax_tree2">§7
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9366.§8" border=0 hspace=2><a id="href_9366.§8" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=131177&level=3&cid=49660" class="ajax_tree2">§8
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9367.§9" border=0 hspace=2><a id="href_9367.§9" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=131189&level=3&cid=49662" class="ajax_tree2">§9
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9368.§10" border=0 hspace=2><a id="href_9368.§10" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=131191&level=3&cid=49663" class="ajax_tree2">§10
+</td></tr></table>
+</div>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp; <a href="javascript:;" onclick="Expand('9369.§11-18')"><img src="./application/class/images/collapsed.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="img_9369.§11-18" border=0 hspace=2><a id="href_9369.§11-18" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=131200&level=2&cid=49664" class="ajax_tree1">§11-18
+</td></tr></table>
+<div style="display:none;"  id="div_9369.§11-18">
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9370.§11" border=0 hspace=2><a id="href_9370.§11" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=131200&level=3&cid=49664" class="ajax_tree2">§11
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9371.§12" border=0 hspace=2><a id="href_9371.§12" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=131204&level=3&cid=49665" class="ajax_tree2">§12
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9372.§13" border=0 hspace=2><a id="href_9372.§13" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=131215&level=3&cid=49667" class="ajax_tree2">§13
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9373.§14" border=0 hspace=2><a id="href_9373.§14" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=131221&level=3&cid=49668" class="ajax_tree2">§14
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9374.§15" border=0 hspace=2><a id="href_9374.§15" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=131230&level=3&cid=49670" class="ajax_tree2">§15
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9375.§16" border=0 hspace=2><a id="href_9375.§16" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=131279&level=3&cid=49673" class="ajax_tree2">§16
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9376.§17" border=0 hspace=2><a id="href_9376.§17" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=131290&level=3&cid=49674" class="ajax_tree2">§17
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9377.§18" border=0 hspace=2><a id="href_9377.§18" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=131305&level=3&cid=49675" class="ajax_tree2">§18
+</td></tr></table>
+</div>
+</div>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<a href="javascript:;" onclick="Expand('9378.ChapterX:Kṣayākṣayo','0','1')"><img src="./application/class/images/collapsed.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="img_9378.ChapterX:Kṣayākṣayo" border=0 hspace=2><a id="href_9378.ChapterX:Kṣayākṣayo" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=131323&level=1&cid=49679" class="ajax_tree0">Chapter X: Kṣayākṣayo
+</td></tr></table>
+<div style="display:none;"  id="div_9378.ChapterX:Kṣayākṣayo">
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp; <a href="javascript:;" onclick="Expand('9379.§1-10')"><img src="./application/class/images/collapsed.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="img_9379.§1-10" border=0 hspace=2><a id="href_9379.§1-10" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=131324&level=2&cid=49680" class="ajax_tree1">§1-10
+</td></tr></table>
+<div style="display:none;"  id="div_9379.§1-10">
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9380.§1" border=0 hspace=2><a id="href_9380.§1" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=131324&level=3&cid=49680" class="ajax_tree2">§1
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9381.§2" border=0 hspace=2><a id="href_9381.§2" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=131331&level=3&cid=49682" class="ajax_tree2">§2
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9382.§3" border=0 hspace=2><a id="href_9382.§3" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=131348&level=3&cid=49687" class="ajax_tree2">§3
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9383.§4" border=0 hspace=2><a id="href_9383.§4" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=131355&level=3&cid=49691" class="ajax_tree2">§4
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9384.§5" border=0 hspace=2><a id="href_9384.§5" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=131364&level=3&cid=49696" class="ajax_tree2">§5
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9385.§6" border=0 hspace=2><a id="href_9385.§6" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=131371&level=3&cid=49700" class="ajax_tree2">§6
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9386.§7" border=0 hspace=2><a id="href_9386.§7" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=131377&level=3&cid=49701" class="ajax_tree2">§7
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9387.§8" border=0 hspace=2><a id="href_9387.§8" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=131384&level=3&cid=49704" class="ajax_tree2">§8
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9388.§9" border=0 hspace=2><a id="href_9388.§9" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=131394&level=3&cid=49705" class="ajax_tree2">§9
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9389.§10" border=0 hspace=2><a id="href_9389.§10" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=131398&level=3&cid=49706" class="ajax_tree2">§10
+</td></tr></table>
+</div>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp; <a href="javascript:;" onclick="Expand('9390.§11-20')"><img src="./application/class/images/collapsed.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="img_9390.§11-20" border=0 hspace=2><a id="href_9390.§11-20" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=131401&level=2&cid=49707" class="ajax_tree1">§11-20
+</td></tr></table>
+<div style="display:none;"  id="div_9390.§11-20">
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9391.§11" border=0 hspace=2><a id="href_9391.§11" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=131401&level=3&cid=49707" class="ajax_tree2">§11
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9392.§12" border=0 hspace=2><a id="href_9392.§12" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=131406&level=3&cid=49708" class="ajax_tree2">§12
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9393.§13" border=0 hspace=2><a id="href_9393.§13" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=131410&level=3&cid=49709" class="ajax_tree2">§13
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9394.§14" border=0 hspace=2><a id="href_9394.§14" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=131425&level=3&cid=49711" class="ajax_tree2">§14
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9395.§15" border=0 hspace=2><a id="href_9395.§15" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=131441&level=3&cid=49713" class="ajax_tree2">§15
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9396.§16" border=0 hspace=2><a id="href_9396.§16" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=131450&level=3&cid=49714" class="ajax_tree2">§16
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9397.§17" border=0 hspace=2><a id="href_9397.§17" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=131458&level=3&cid=49715" class="ajax_tree2">§17
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9398.§18" border=0 hspace=2><a id="href_9398.§18" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=131509&level=3&cid=49716" class="ajax_tree2">§18
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9399.§19" border=0 hspace=2><a id="href_9399.§19" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=131527&level=3&cid=49717" class="ajax_tree2">§19
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9400.§20" border=0 hspace=2><a id="href_9400.§20" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=131564&level=3&cid=49718" class="ajax_tree2">§20
+</td></tr></table>
+</div>
+</div>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<a href="javascript:;" onclick="Expand('9401.ChapterXI:Abhiratilokadhātvānayanākṣobhyatathāgatadarśanaparivarta','0','1')"><img src="./application/class/images/collapsed.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="img_9401.ChapterXI:Abhiratilokadhātvānayanākṣobhyatathāgatadarśanaparivarta" border=0 hspace=2><a id="href_9401.ChapterXI:Abhiratilokadhātvānayanākṣobhyatathāgatadarśanaparivarta" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=131572&level=1&cid=49720" class="ajax_tree0">Chapter XI: Abhiratilokadhātvānayanākṣobhyatathāgatadarśanaparivarta
+</td></tr></table>
+<div style="display:none;"  id="div_9401.ChapterXI:Abhiratilokadhātvānayanākṣobhyatathāgatadarśanaparivarta">
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp; <a href="javascript:;" onclick="Expand('9402.§1-9')"><img src="./application/class/images/collapsed.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="img_9402.§1-9" border=0 hspace=2><a id="href_9402.§1-9" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=131573&level=2&cid=49721" class="ajax_tree1">§1-9
+</td></tr></table>
+<div style="display:none;"  id="div_9402.§1-9">
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9403.§1" border=0 hspace=2><a id="href_9403.§1" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=131573&level=3&cid=49721" class="ajax_tree2">§1
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9404.§2" border=0 hspace=2><a id="href_9404.§2" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=131668&level=3&cid=49727" class="ajax_tree2">§2
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9405.§3" border=0 hspace=2><a id="href_9405.§3" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=131687&level=3&cid=49737" class="ajax_tree2">§3
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9406.§4" border=0 hspace=2><a id="href_9406.§4" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=131701&level=3&cid=49744" class="ajax_tree2">§4
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9407.§5" border=0 hspace=2><a id="href_9407.§5" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=131726&level=3&cid=49747" class="ajax_tree2">§5
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9408.§6" border=0 hspace=2><a id="href_9408.§6" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=131731&level=3&cid=49748" class="ajax_tree2">§6
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9409.§7" border=0 hspace=2><a id="href_9409.§7" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=131745&level=3&cid=49751" class="ajax_tree2">§7
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9410.§8" border=0 hspace=2><a id="href_9410.§8" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=131757&level=3&cid=49755" class="ajax_tree2">§8
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9411.§9" border=0 hspace=2><a id="href_9411.§9" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=131766&level=3&cid=49757" class="ajax_tree2">§9
+</td></tr></table>
+</div>
+</div>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<a href="javascript:;" onclick="Expand('9412.ChapterXII:Nigamanaparīndanāparivarta','0','1')"><img src="./application/class/images/collapsed.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="img_9412.ChapterXII:Nigamanaparīndanāparivarta" border=0 hspace=2><a id="href_9412.ChapterXII:Nigamanaparīndanāparivarta" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=131778&level=1&cid=49759" class="ajax_tree0">Chapter XII: Nigamanaparīndanāparivarta
+</td></tr></table>
+<div style="display:none;"  id="div_9412.ChapterXII:Nigamanaparīndanāparivarta">
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp; <a href="javascript:;" onclick="Expand('9413.§1-10')"><img src="./application/class/images/collapsed.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="img_9413.§1-10" border=0 hspace=2><a id="href_9413.§1-10" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=131779&level=2&cid=49760" class="ajax_tree1">§1-10
+</td></tr></table>
+<div style="display:none;"  id="div_9413.§1-10">
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9414.§1" border=0 hspace=2><a id="href_9414.§1" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=131779&level=3&cid=49760" class="ajax_tree2">§1
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9415.§2" border=0 hspace=2><a id="href_9415.§2" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=131782&level=3&cid=49761" class="ajax_tree2">§2
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9416.§3" border=0 hspace=2><a id="href_9416.§3" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=131792&level=3&cid=49762" class="ajax_tree2">§3
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9417.§4" border=0 hspace=2><a id="href_9417.§4" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=131798&level=3&cid=49763" class="ajax_tree2">§4
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9418.§5" border=0 hspace=2><a id="href_9418.§5" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=131803&level=3&cid=49764" class="ajax_tree2">§5
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9419.§6" border=0 hspace=2><a id="href_9419.§6" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=131817&level=3&cid=49766" class="ajax_tree2">§6
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9420.§7" border=0 hspace=2><a id="href_9420.§7" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=131826&level=3&cid=49767" class="ajax_tree2">§7
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9421.§8" border=0 hspace=2><a id="href_9421.§8" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=131834&level=3&cid=49768" class="ajax_tree2">§8
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9422.§9" border=0 hspace=2><a id="href_9422.§9" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=131839&level=3&cid=49769" class="ajax_tree2">§9
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9423.§10" border=0 hspace=2><a id="href_9423.§10" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=131851&level=3&cid=49774" class="ajax_tree2">§10
+</td></tr></table>
+</div>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp; <a href="javascript:;" onclick="Expand('9424.§11-20')"><img src="./application/class/images/collapsed.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="img_9424.§11-20" border=0 hspace=2><a id="href_9424.§11-20" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=131861&level=2&cid=49775" class="ajax_tree1">§11-20
+</td></tr></table>
+<div style="display:none;"  id="div_9424.§11-20">
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9425.§11" border=0 hspace=2><a id="href_9425.§11" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=131861&level=3&cid=49775" class="ajax_tree2">§11
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9426.§12" border=0 hspace=2><a id="href_9426.§12" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=131877&level=3&cid=49776" class="ajax_tree2">§12
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9427.§13" border=0 hspace=2><a id="href_9427.§13" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=131895&level=3&cid=49777" class="ajax_tree2">§13
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9428.§14" border=0 hspace=2><a id="href_9428.§14" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=131901&level=3&cid=49779" class="ajax_tree2">§14
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9429.§15" border=0 hspace=2><a id="href_9429.§15" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=131908&level=3&cid=49780" class="ajax_tree2">§15
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9430.§16" border=0 hspace=2><a id="href_9430.§16" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=131928&level=3&cid=49782" class="ajax_tree2">§16
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9431.§17" border=0 hspace=2><a id="href_9431.§17" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=131936&level=3&cid=49783" class="ajax_tree2">§17
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9432.§18" border=0 hspace=2><a id="href_9432.§18" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=131944&level=3&cid=49784" class="ajax_tree2">§18
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9433.§19" border=0 hspace=2><a id="href_9433.§19" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=131952&level=3&cid=49785" class="ajax_tree2">§19
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9434.§20" border=0 hspace=2><a id="href_9434.§20" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=131962&level=3&cid=49786" class="ajax_tree2">§20
+</td></tr></table>
+</div>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp; <a href="javascript:;" onclick="Expand('9435.§21-23')"><img src="./application/class/images/collapsed.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="img_9435.§21-23" border=0 hspace=2><a id="href_9435.§21-23" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=131975&level=2&cid=49788" class="ajax_tree1">§21-23
+</td></tr></table>
+<div style="display:none;"  id="div_9435.§21-23">
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9436.§21" border=0 hspace=2><a id="href_9436.§21" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=131975&level=3&cid=49788" class="ajax_tree2">§21
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9437.§22" border=0 hspace=2><a id="href_9437.§22" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=131978&level=3&cid=49789" class="ajax_tree2">§22
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9438.§23" border=0 hspace=2><a id="href_9438.§23" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=131983&level=3&cid=49790" class="ajax_tree2">§23
+</td></tr></table>
+</div>
+</div>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_9439.Colophon" border=0 hspace=2><a id="href_9439.Colophon" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=37&mid=131993&level=1&cid=49795" class="ajax_tree0">Colophon
+</td></tr></table>
+<script language=javascript>test('9264.§16|9258.§11-20|9246.ChapterIV:Glānapratisaṃmodanāparivarta|')</script><div class='bverknavn'><a href='/polyglotta/index.php?page=library&amp;bid=2'>Back to library</a></div></div><!-- venstrefulltekstfelt --><div class="clear"></div><!-- clear --><div id="nav-menu"><ul>
+  		  <li  id="nav-1"><a class="tabValgt" href="/polyglotta/index.php?page=record&amp;view=record&amp;vid=37&amp;mid=130187&amp;level=3">Sentence by sentence view</a></li>
+  		  <li  id="nav-2"><a  href="/polyglotta/index.php?page=fulltext&amp;view=fulltext&amp;vid=37&amp;cid=49465&amp;mid=130187&amp;level=3">Continuous text view</a></li>
+ 		<li  id="nav-3"><a  href="/polyglotta/admin/index.php?page=fulltext&amp;view=fulltext&amp;vid=37&amp;cid=49465&amp;mid=130187&amp;level=3">View in admin</a></li>
+
+  		  </ul></div><div class='clear'></div><!-- clear -->			<script language="javascript" type="text/javascript">
+			var kilderef = '';
+			var tekstid = 0;
+			var tekstid_bilder = 0;
+			var filsti = '';
+			var thumbnail = '';
+			</script>
+		<div class='infofulltekstfelt'><div class='BolkContainer'><div class='textvar' style='width:13.285714285714%;'><div class='Sanskrit'><div class='kilderef' id='7339272'></div><div class='clear'></div><span id='7339272bi' class='paragraph'>
+							§16 tatra katamo bandhaḥ, katamo mokṣaḥ |&nbsp;</span><span id='7339273bi' class='paragraph'>
+						 anupāyād bhavagatiparigraho bodhisatvasya bandhaḥ,&nbsp;</span><span id='7339274bi' class='paragraph'>
+						 upāyād bhavagatigamanaṃ mokṣaḥ |&nbsp;</span><span id='7339275bi' class='paragraph'>
+						 anupāyād dhyānasamādhyāsvādanatā bodhisatvasya bandhaḥ,&nbsp;</span><span id='7339276bi' class='paragraph'>
+						 upāyena dhyānasamādhyāsvādanatā mokṣaḥ |&nbsp;</span><span id='7339277bi' class='paragraph'>
+						 anupāyasaṃgṛhītā prajñā bandhaḥ,&nbsp;</span><span id='7339278bi' class='paragraph'>
+						 upāyasaṃgṛhītā prajñā mokṣaḥ |&nbsp;</span><span id='7339279bi' class='paragraph'>
+						 prajñayāsaṃgṛhīta upāyo bandhanam,&nbsp;</span><span id='7339280bi' class='paragraph'>
+						 prajñāsaṃgṛhīta upāyo mokṣaḥ |&nbsp;</span></div></div><div class='textvar' style='width:13.285714285714%;'><div class='Chinese'><div class='kilderef' id='631623'></div><div class='clear'></div><span id='631623bi' class='paragraph'>
+							何謂縛何謂解&nbsp;</span><span id='631624bi' class='paragraph'>
+						 &nbsp;</span><span id='631625bi' class='paragraph'>
+						 (菩薩禪定以縛)諸我以道縛我&nbsp;</span><span id='631626bi' class='paragraph'>
+						 菩薩禪定以縛(諸我以道縛我 )&nbsp;</span><span id='631627bi' class='paragraph'>
+						 縛者菩薩以善權生五道解彼受&nbsp;</span><span id='631628bi' class='paragraph'>
+						 菩薩無權執智縛&nbsp;</span><span id='631629bi' class='paragraph'>
+						 行權執智解&nbsp;</span><span id='631630bi' class='paragraph'>
+						 智不執權縛&nbsp;</span><span id='631631bi' class='paragraph'>
+						 智而執權解&nbsp;</span></div></div><div class='textvar' style='width:13.285714285714%;'><div class='Chinese'><div class='kilderef' id='634599'></div><div class='clear'></div><span id='634599bi' class='paragraph'>
+							何謂縛何謂解&nbsp;</span><span id='634600bi' class='paragraph'>
+						 &nbsp;</span><span id='634601bi' class='paragraph'>
+						 (貪著禪味是菩薩縛 )以方便生是菩薩解&nbsp;</span><span id='634602bi' class='paragraph'>
+						 貪著禪味是菩薩縛 (以方便生是菩薩解 )&nbsp;</span><span id='634603bi' class='paragraph'>
+						 &nbsp;</span><span id='634604bi' class='paragraph'>
+						 又無方便慧縛&nbsp;</span><span id='634605bi' class='paragraph'>
+						 有方便慧解&nbsp;</span><span id='634606bi' class='paragraph'>
+						 無慧方便縛&nbsp;</span><span id='634607bi' class='paragraph'>
+						 有慧方便解&nbsp;</span></div></div><div class='textvar' style='width:13.285714285714%;'><div class='Chinese'><div class='kilderef' id='637575'></div><div class='clear'></div><span id='637575bi' class='paragraph'>
+							又妙吉祥 何等名為菩薩繫縛 何等名為菩薩解脫&nbsp;</span><span id='637576bi' class='paragraph'>
+						 &nbsp;</span><span id='637577bi' class='paragraph'>
+						 (若諸菩薩味著所修靜慮解脫等持等至 是則名為菩薩繫縛 )若諸菩薩以巧方便攝諸有生無所貪著 是則名為菩薩解脫&nbsp;</span><span id='637578bi' class='paragraph'>
+						 若諸菩薩味著所修靜慮解脫等持等至 是則名為菩薩繫縛 (若諸菩薩以巧方便攝諸有生無所貪著 是則名為菩薩解脫 )&nbsp;</span><span id='637579bi' class='paragraph'>
+						 &nbsp;</span><span id='637580bi' class='paragraph'>
+						 若無方便善攝妙慧 是名繫縛&nbsp;</span><span id='637581bi' class='paragraph'>
+						 若有方便善攝妙慧 是名解脫&nbsp;</span><span id='637582bi' class='paragraph'>
+						 &nbsp;</span><span id='637583bi' class='paragraph'>
+						 &nbsp;</span></div></div><div class='textvar' style='width:13.285714285714%;'><div class='Tibetan'><div class='kilderef' id='2152288'></div><div class='clear'></div><span id='2152288bi' class='paragraph'>
+							de la bciṅs pa gaṅ | grol ba gaṅ źe na |&nbsp;</span><span id='2152289bi' class='paragraph'>
+						 thabs med par srid pa’i grol ba yoṅs su ’dzin pa ni byaṅ chub sems dpa’i bciṅs pa’o ||&nbsp;</span><span id='2152290bi' class='paragraph'>
+						 thabs kyis srid pa’i ’gro bar ’jug pa ni grol ba’o ||&nbsp;</span><span id='2152291bi' class='paragraph'>
+						 thabs med pas bsam gtan daṅ | tiṅ ṅe ’dzin daṅ | sñoms par ’jug par ro myaṅ ba ni byaṅ chub sems dpa’i bciṅs ba’o ||&nbsp;</span><span id='2152292bi' class='paragraph'>
+						 thabs kyis bsam gtan daṅ | tiṅ ṅe ’dzin gyi ro myaṅ ba ni grol ba’o ||&nbsp;</span><span id='2152293bi' class='paragraph'>
+						 thabs kyis ma zin pa’i śes rab ni bciṅs pa’o ||&nbsp;</span><span id='2152294bi' class='paragraph'>
+						 thabs kyis zin pa’i śes rab ni grol ba’o | |&nbsp;</span><span id='2152295bi' class='paragraph'>
+						 śes rab kyis ma zin pa’i thabs ni bciṅs pa’o ||&nbsp;</span><span id='2152296bi' class='paragraph'>
+						 śes rab kyis zin pa’i thabs ni grol ba’o ||&nbsp;</span></div></div><div class='textvar' style='width:13.285714285714%;'><div class='English'><div class='kilderef' id='628647'></div><div class='clear'></div><span id='628647bi' class='paragraph'>
+							"What is bondage? And what is liberation?&nbsp;</span><span id='628648bi' class='paragraph'>
+						 To indulge in liberation from the world without employing liberative technique is bondage for the bodhisattva.&nbsp;</span><span id='628649bi' class='paragraph'>
+						 To engage in life in the world with full employment of liberative technique is liberation for the bodhisattva.&nbsp;</span><span id='628650bi' class='paragraph'>
+						 To experience the taste of contemplation, meditation, and concentration without skill in liberative technique is bondage.&nbsp;</span><span id='628651bi' class='paragraph'>
+						 To experience the taste of contemplation and meditation with skill in liberative technique is liberation.&nbsp;</span><span id='628652bi' class='paragraph'>
+						 Wisdom not integrated with liberative technique is bondage,&nbsp;</span><span id='628653bi' class='paragraph'>
+						 but wisdom integrated with liberative technique is liberation.&nbsp;</span><span id='628654bi' class='paragraph'>
+						 Liberative technique not integrated with wisdom is bondage,&nbsp;</span><span id='628655bi' class='paragraph'>
+						 but liberative technique integrated with wisdom is liberation.&nbsp;</span></div></div><div class='textvar' style='width:13.285714285714%;'><div class='English'><div class='kilderef' id='7345224'></div><div class='clear'></div><span id='7345224bi' class='paragraph'>
+							.&nbsp;</span><span id='7345225bi' class='paragraph'>
+						 .&nbsp;</span><span id='7345226bi' class='paragraph'>
+						 .&nbsp;</span><span id='7345227bi' class='paragraph'>
+						 .&nbsp;</span><span id='7345228bi' class='paragraph'>
+						 .&nbsp;</span><span id='7345229bi' class='paragraph'>
+						 .&nbsp;</span><span id='7345230bi' class='paragraph'>
+						 .&nbsp;</span><span id='7345231bi' class='paragraph'>
+						 .&nbsp;</span><span id='7345232bi' class='paragraph'>
+						 .&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:13.285714285714%;'><div class=''><span id='bi' class=''>
+							&nbsp;</span>							<script language="javascript" type="text/javascript">
+
+							tekstid = "";
+							kilderef = "  ";
+							$('#'+tekstid).text(kilderef);
+							</script>
+					</div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:13.285714285714%;'></div><div class='textvar' style='width:13.285714285714%;'></div><div class='textvar' style='width:13.285714285714%;'></div><div class='textvar' style='width:13.285714285714%;'></div><div class='textvar' style='width:13.285714285714%;'></div><div class='textvar' style='width:13.285714285714%;'></div><div class='textvar' style='width:13.285714285714%;'></div></div><div class='clear'></div><div class="fontboks"><a onClick=onOffdiv('permlink') name="permlink" href="#permlink">Permanent link</a></div><div class='clear'></div><div class='perm_felt' id='permlink'>http://www2.hf.uio.no/common/apps/permlink/permlink.php?app=polyglotta&amp;context=ctext&amp;uid=08837f64-708f-11df-870c-00215aecadea</div></div></div><!-- infofelt --></div><!-- divControl --><div class="clear"></div>
+<div style="clear:both"></div><div class="signatur"><div class="signatur_left">
+		<a href="https://wiki.uio.no/hf/dmlf/index.php/Kategori:Polyglotta:Documentation">Go to Wiki Documentation</a></br>Enhet: <a HREF=http://www.hf.uio.no>Det humanistiske fakultet</a> &nbsp; Utviklet av: <a href="http://www.hf.uio.no/tjenester/it">IT-seksjonen ved HF</a></div><!--signatur_left -->
+		<div class="signatur_right"><a href="/polyglotta/admin/index.php">Login</a></div>
+		<div style="clear:both"></div></div>
+</body></html><SCRIPT LANGUAGE="JAVASCRIPT">
+	
+	$("#tr_IA").click(function(){
+	    if ($("#toggle_container_IA").is(':hidden'))
+	    	$("#toggle_container_IA").show();
+	    else{
+	        $("#toggle_container_IA").hide();
+	    }
+	    return false;
+		});
+
+	$("#tr_lang").click(function(){
+	    if ($("#toggle_container_lan").is(':hidden'))
+	    	$("#toggle_container_lan").show();
+	    else{
+	        $("#toggle_container_lan").hide();
+	    }
+	    return false;
+	});
+
+	$("#tr_img").click(function(){
+	    if ($("#toggle_container_img").is(':hidden'))
+	    	$("#toggle_container_img").show();
+	    else{
+	        $("#toggle_container_img").hide();
+	    }
+	    return false;
+	});
+
+	$("#diac2button").click(function(){
+	   if ($("#ex3a").is(':hidden')){
+		   $("#ex3a").show();
+	       $("#diac2button").html("Hide&#32Diacritica-help");
+	   }else{
+	       $("#ex3a").hide();
+	       $("#diac2button").html("Diacritica-help");
+	   }
+	   return false;
+	});
+
+	$("#diacbutton").click(function(){
+	   if ($("#diacritical_sign").is(':hidden')){
+		   	$("#diacritical_sign").show();
+	      	$("#diacbutton").html("Hide&#32diacritica");
+	   }else{
+	        $("#diacritical_sign").hide();
+	        $("#diacbutton").html("Diacritica");
+	   }
+	   return false;
+    });
+
+	$('#toggle_container_IA').click(function(e) {
+	   e.stopPropagation();
+	});
+
+	$('#toggle_container_lan').click(function(e) {
+        e.stopPropagation();
+    });
+
+	$('#toggle_container_img').click(function(e) {
+        e.stopPropagation();
+    });
+
+	$('#ex3a').click(function(e) {
+	    e.stopPropagation();
+	});
+
+	$('#diacritical_sign').click(function(e) {
+        e.stopPropagation();
+    });
+
+	//Kode for å sette inn diakritiske tegn
+	$('#diacritical > tbody > tr > td').click(function() {
+	  	//alert('red');
+		$("#sokeboks").val($("#sokeboks").val() + $(this).text());
+	});
+
+	$('.diac2button').text(($('.diacbutton').text() == 'Diacritica-help') ? 'Hide Diacritica-help' : 'Diacritica-help');
+	
+	//Lukker alle åpnede pop'uper ved klikk på siden
+	$(document).click(function() {
+		$('#toggle_container_IA').hide();
+	    
+        $('#toggle_container_lan').hide();
+    
+        $('#toggle_container_img').hide();
+   
+   		$('#diacritical_sign').hide();
+   		$("#diacbutton").html("Diacritica");
+   
+       	$('#ex3a').hide();
+       	$("#diac2button").html("Diacritica-help");
+   });
+	</SCRIPT>
